@@ -1,13 +1,13 @@
 # NRP_Projekt_2026_2RII_VS-
 
-# Izgubljeno & Najdeno Kampus
+# Izgubljeno & Najdeno Kampus - KampusNajde
 
 Aplikacija za hiter "matching" izgubljenih in najdenih predmetov v študentskih kampusih univerz.
 
 ## Problem
 
 Študenti in osebje univerze pogosto izgubijo predmete (ključe, študentske izkaznice, prenosnike, dežnike, knjige) na kampusu, a ni centraliziranega in učinkovitega sistema za ujemanje izgubljenih in najdenih predmetov. Študenti se trenutno zanašajo na:
-- Facebook skupin (razpršene informacije, težko iskati)
+- Facebook in Discord skupin (razpršene informacije, težko iskati)
 - Fizične "lost & found" točke (omejene ure, slaba vidnost)
 - E-mailske verižice (počasno, neindeksirano)
 - Priporočila iz ust v usta
@@ -20,7 +20,7 @@ Posledica:
 
 ## Rešitev
 
-**Izgubljeno & Najdeno Kampus** je spletna aplikacija, ki centralizira izgubljene in najdene predmete znotraj univerzitetnega kampusa (MVP se osredotoča na Univerzo v Ljubljani). Uporabniki lahko:
+**Izgubljeno & Najdeno Kampus** je spletna aplikacija, ki centralizira izgubljene in najdene predmete znotraj univerzitetnega kampusa oz. na splošno na območjih šolskih institucij. Uporabniki lahko:
 
 1. **Naročijo Najdene Predmete**
    - Naložijo foto, opišejo predmet, izberejo kategorijo (ključi, dokumenti, elektronika, oblačila, itd.)
@@ -66,6 +66,5 @@ Primer:
 
 ## Ciljna Skupina
 
-- **Primarna**: Študenti in osebje Univerze v Ljubljani (15.000+)
-- **Sekundarna**: Druge univerze v Sloveniji (enostavna ekspanzija)
-- **Primer uporabe**: Kdorkoli na kampusu, ki pogosto izgubi ali najde stvari
+- **Primarna**: Študenti in osebje na kampusih oz. na šolskih območjih
+- **Primer uporabe**: Kdorkoli, ki pogosto izgubi ali najde stvari na teh lokacijah
