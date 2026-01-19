@@ -38,8 +38,6 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 
 ### Kdo je tipičen uporabnik?
 
-**Persona: Anja, 32 let, urednica iz Velenja**
-
 - Starša, ki iščeta rabljene stvari za otroke (obleke, igrače, pohištvo)
 - Ima malo časa za brskanje – potrebuje hitro in pametno iskanje
 - Išče specifične stvari in varčuje – je zaupljiva, a boji se goljufij
