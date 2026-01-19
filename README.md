@@ -1,4 +1,4 @@
-# NRP_Projekt_2026_2RII_VS-
+# NRP_Projekt_2026_2RII_VSS_nikjovna
 
 # Izgubljeno & Najdeno Kampus - KampusNajde
 
