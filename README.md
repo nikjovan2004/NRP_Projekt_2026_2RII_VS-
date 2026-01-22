@@ -44,14 +44,14 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 
 ### V kakšnem okolju deluje?
 
-- Ima pametni telefon in Viber/WhatsApp
+- Ima pametni telefon ali računalnik z brskalnikom (Chrome, Edge, Firefox, Safari)
 - Nakupuje rabljene stvari 2-3x mesečno
-- Pogosto sprašuje prijatelje za »trike« in »najdbe«
+- Uporablja email in SMS, vajena je tudi obvestil brskalnika (npr. iz novičarskih strani)
 
 ### Katere težave ima v praksi?
 
 - *»Kako vem, da je iskreno?«* – boji se ponarejenosti in goljufij
-- *»Kje je kaj novega?«* – mora vsak dan sami iskati nove oglase
+- *»Kje je kaj novega?«* – mora vsak dan sama iskati nove oglase
 - *»To se mora prodati danes!«* – oglasi hitro postanejo »mrtvi«
 - *»Kaj cenikam?«* – ni vedenja o realnih cenah
 - *»Ali je do mene dovolj blizu?«* – ne ve, kako se dogovoriti
@@ -65,11 +65,11 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 **PametnoNajdiRabljeno** je **spletna aplikacija**, ki kombinira:
 
 1. **Agregacija vseh platform** – Bolha, Oglasi.si, Facebook, Vinted, Depop na enem mestu
-2. **AI proaktivna iskanja** – Uporabnik postavi kriterije (»kolo do €100 v Velenju«) in avtomatski prejme obvestila
+2. **AI proaktivna iskanja** – Uporabnik postavi kriterije (»kolo do €100 v Velenju«) in avtomatsko prejme obvestila
 3. **Preverjanje avtentičnosti** – AI analizira slike oglasov in opozarja na ponarejenost
-4. **Direktni in varni kontakt** – WhatsApp, obojestransko zaščiteno plačilo (escrow)
+4. **Direktni in varni kontakt** – strukturirana komunikacija in zaščiteno plačilo (escrow)
 5. **Pametna kategorija in prioritizacija** – Sistemska obvestila le za relevantne oglase
-6. **Garancija kupca** – Če je artikel ponarejeno ali loše, denar nazaj
+6. **Garancija kupca** – Če je artikel ponarejen ali škodljiv, denar nazaj
 
 **Glavna vrednost:** Zamenjava 2 uri ročnega iskanja na 5 minut avtomatiziranega obveščanja.
 
@@ -78,12 +78,12 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 | **Značilnost** | **Bolha** | **Vinted** | **PametnoNajdiRabljeno** |
 |---|---|---|---|
 | Agregirani oglasi | ❌ Samo Bolha | ❌ Samo Vinted | ✅ VSE platforme |
-| Proaktivna iskanja | ❌ Ročno | ❌ Ročno | ✅ Avtomatski obvestila |
-| Preverjanje avtentičnosti | ❌ Ni | ⚠️ Osnovno | ✅ AI Computer Vision |
-| Direktni kontakt | ⚠️ Komentirani | ⚠️ Čat | ✅ WhatsApp + escrow |
-| Dostopnost | ❌ Ni | ❌ Ni | ✅ Glasovni asistent |
+| Proaktivna iskanja | ❌ Ročno | ❌ Ročno | ✅ Avtomatska obvestila |
+| Preverjanje avtentičnosti | ❌ Ni | ⚠️ Osnovno | ✅ AI Computer Vision + AI analiza teksta |
+| Direktni kontakt | ⚠️ Komentirani | ⚠️ Čat | ✅ Strukturiran dogovor + zaščiteno plačilo |
+| Dostopnost | ❌ Ni | ❌ Ni | ✅ Glasovni asistent + responsive web |
 
-**Unikatna prednost:** Meta-tržnica (prva platforma v regiji, ki agregira VSE) + AI avtomatizacija + garancija kupca.
+**Unikatna prednost:** Meta-tržnica (prva platforma v regiji, ki agregira VSE) + AI avtomatizacija + preverjanje avtentičnosti + garancija kupca.
 
 ---
 
@@ -94,15 +94,18 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 **Brez PametnoNajdiRabljeno:**
 - Vsak dan ročno pregleduje Bolho, Facebook, Vinted
 - Potrebuje ~30 minut dnevno
-- Čaka 2 tedna in gl oglasi imajo »preslabe« rezultate
+- Čaka 2 tedna in oglasi imajo »preslabe« rezultate
 
 **S PametnoNajdiRabljeno:**
 
-1. **Postavka iskanja (20 sekund):** Marko reče: *»Išč rabljeno kolo do €120 v Velenju«*
-2. **AI čaka (avtomatika):** Sistem avtomatski pregleduje vse platforme
-3. **Obvestilo:** Marko prejme WhatsApp: *»Našli so 3 nova kolesa po tvojih kriterijih. Trek gorsko kolo – €115 – 5 km od tebe«*
-4. **Varni dogovor:** Marko klikne → AI preveri autentičnost kolesa → direktni dogovor z lastnikom → escrow plačilo
-5. **Rezultat:** V 5 minutah je našel kolo in se dogovoril varno – brez 2 ur ročnega iskanja
+1. **Postavka iskanja (20 sekund):** Marko na strani vnese: *»Iščem rabljeno kolo do €120 v Velenju«* in potrdi, da želi obvestila (web push + email).
+2. **AI čaka (avtomatika):** Sistem avtomatsko pregleduje vse platforme.
+3. **Obvestilo:** Marko prejme:
+   - web push obvestilo v brskalniku na telefonu/računalniku,
+   - in/ali email (npr. dnevni povzetek),
+   - za premium račun tudi SMS pri TOP zadetkih.
+4. **Varni dogovor:** Marko klikne → AI preveri avtentičnost kolesa → strukturiran dogovor z lastnikom → escrow plačilo.
+5. **Rezultat:** V 5 minutah je našel kolo in se dogovoril varno – brez 2 ur ročnega iskanja.
 
 ---
 
@@ -183,99 +186,51 @@ Uporabniki se pri iskanju rabljenih stvari soočajo s **fragmentiranim tržišč
 
 ## 7. Tehnološke rešitve in orodja
 
-### 🎯 IZBRANA KOMBINACIJA (Spletna aplikacija + Perplexity AI)
+### 🎯 IZBRANA KOMBINACIJA (Spletna aplikacija + Perplexity AI + multi-kanalna obvestila)
 
 #### **Frontend (Spletna aplikacija – Desktop & Mobile Web):**
-- **Next.js** (brezplačno) – Kombinira React + server-side rendering (SSR), idealno za SEO in hitrost
-  - Lahka za učenje, odličnih učnih virov
-  - Vgrajena optimizacija slik in API route-ov
-  - Idealno za MVP (minimum viable product)
-  - **Responsive design** – deluje na desktop, tabletu in mobilnem telefonu
-  - Ena koda za vse naprave (ni potrebna posebna mobilna aplikacija)
-
-#### **CSS Framework za responsive design:**
-- **Tailwind CSS** (brezplačno) – Hitro brez-stiliziranje
-  - Mobile-first pristop
-  - Samodejno se prilagaja različnim velikostim zaslona
-  - Že vgrajen v Next.js
+- **Next.js** – SSR, dober SEO, hitro nalaganje.
+- **Tailwind CSS** – responsive design, en layout za telefon, tablico in desktop.
 
 #### **Backend (Server logika):**
-- **Node.js + Express** (brezplačno) – Ista koda kot frontend (JavaScript)
-  - Hitrejša razvoja – EN jezik za frontend + backend
-  - Odličen za real-time aplikacije
-  - Ogromna knjižnica npm paketov
+- **Node.js + Express** – isti jezik kot frontend (JavaScript), hitrejši razvoj.
 
 #### **Baza podatkov:**
-- **Firebase Realtime Database** (brezplačno) – Glavna baza
-  - Ni SQL-a za pisati (NoSQL)
-  - Real-time sinhronizacija (push notifikacije)
-  - Avtomatske backupe
-  - Brezplačna kvota zadošča za >100k uporabnikov
+- **Firebase Realtime Database** – real-time podatki, brezplačen free tier, brez ročnega SQL.
 
-#### **AI & Machine Learning:**
-- **Perplexity PRO API** (€0,01-0,05 per query) – **Analiza oglasov in povpraševanj**
-  - Razumevanje naravnega jezika (kaj uporabnik išče)
-  - Analiza tekstovnih opisov oglasov
-  - Detekcija sumljivih oglasov (anomalije v cenah, čudni opisi)
-  - Primerjava cen in trendov s spleta
-  - Avtomatska kategorizacija artiklov
-  
-- **Google Cloud Vision API** (brezplačna kvota 1.000 slik/mesec) – **Analiza slik oglasov**
-  - Preverjanje avtentičnosti slik
-  - Detekcija ponarejenosti
-  - OCR (branje teksta iz slik)
-  
-- **Web Speech API** (vgrajena v browser) – Glasovni vnos (BREZPLAČNO, deluje v Chrome, Firefox, Safari)
+#### **AI & analiza:**
+- **Perplexity PRO API** – razumevanje povpraševanj, analiza opisov oglasov, detekcija sumljivih oglasov.
+- **Google Cloud Vision API** – analiza slik (ponarejenost, OCR).
+- **Web Speech API** – glasovni vnos v brskalniku.
 
-#### **Web Scraping (Podatki iz platform):**
-- **Puppeteer** (brezplačno) – Avtomatiziran scraping
-  - Bolha.com – iskanje oglasov
-  - Oglasi.si – iskanje oglasov
-  - Facebook Graph API – Marketplace oglasi
-  - Avtomatski scraping 1-2x na dan
+#### **Agregacija oglasov:**
+- **Puppeteer** – scraping Bolha.com, Oglasi.si, del Facebook Marketplace.
 
-#### **Integracije:**
-- **WhatsApp Business API** (€0,01-0,05 po sporočilu) – Obvestila uporabnikom
-- **Stripe** (2,9% + €0,30 po transakciji) – Plačila (samo ko je res potrebno)
+#### **Obveščanje uporabnikov (namesto Viber/WhatsApp):**
+
+1. **Web push notifičacije (prek brskalnika)**[web:64][web:67][web:71][web:84]
+   - Uporaba **Push API + Notifications API** v brskalniku.
+   - Deluje na desktop in mobilnih brskalnikih (Chrome, Edge, Firefox, Android Chrome).
+   - Idealno za real-time: “ravnokar se je pojavil nov oglas, ki ustreza tvojim kriterijem”.
+
+2. **Email obvestila (digest + posamezna obvestila)**[web:82][web:85][web:87]
+   - Dnevni ali urni povzetek novih oglasov.
+   - Uporaba ponudnika (npr. SendGrid / Mailgun / Brevo).
+   - Dobro za uporabnike, ki ne želijo push notifikacij.
+
+3. **SMS (za premium uporabnike / kritične ponudbe)**[web:83][web:86][web:78]
+   - Integracija z EU SMS API (npr. GatewayAPI, Infobip, Sinch).
+   - Uporaba za: zelo dobra ponudba, potrditve plačil, varnostna obvestila.
+   - Plačljiv per SMS, zato omejeno na premium / opt‑in.
+
+4. **In-app / on-site center obvestil**
+   - Znotraj aplikacije (ikona zvonca + spustni seznam zadnjih X obvestil).
+   - Vedno sinhronizirano s push/email/SMS.
 
 #### **Hosting & Deployment:**
-- **Vercel** (brezplačno za Next.js) – Idealno za spletno app
-  - Avtomatske deploymente z GitHub
-  - CDN po svetu
-  - Vključeni serverless funkcije
-  - Dela odlično na mobilnih napravah
-- **Firebase Hosting** (brezplačno) – Za dodatne statične datoteke
-- **GitHub** (brezplačno) – Verzioniranje kode
-
-### 📊 Primerjava: Kompletna tehnološka stack S PERPLEXITY
-
-| **Komponenta** | **Izbrana rešitev** | **Cena** | **Razlog** |
-|---|---|---|---|
-| Frontend | **Next.js + Tailwind CSS** | €0 | Responsive design, SSR, SEO, hitro |
-| Backend | **Node.js + Express** | €0 | JavaScript povsod = hitrejša razvoja |
-| Baza | **Firebase Realtime DB** | €0 (free tier) | Real-time, NoSQL, avtomatske backupe |
-| AI analiza oglasov | **Perplexity PRO API** | €0,01-0,05/query | Razumevanje, detekcija goljufij, primerjava cen |
-| AI analiza slik | **Google Vision API** | €0-20/mesec | 1.000 slik gratis, nato poceni |
-| Glasovni vnos | **Web Speech API** | €0 | Vgrajena v browser |
-| Web Scraping | **Puppeteer** | €0 | Zgloba iz Bolhe, Oglasov.si, Facebook |
-| WhatsApp obvestila | **WhatsApp Business API** | €0,01-0,05/msg | Samo kadar res pošiljaš |
-| Plačila | **Stripe** | 2,9% + €0,30 | Plačaš samo ko denar teče |
-| Hosting | **Vercel + Firebase** | €0 | Free tier dovolj za leto dni |
-
-### ⚡ Skupni stroški prvega leta
-
-- **Razvoj:** €0 (vse brezplačno)
-- **Hosting:** €0 (Vercel + Firebase free tier)
-- **Perplexity API klici:** €30-70/mesec (~100k oglasov/mesec × €0,0005 per analiza)
-- **Google Vision API:** €0-20/mesec (1.000 slik gratis, nato €1,50/1000 slik)
-- **WhatsApp obvestila:** €100-200/mesec (samo pri 10k+ sporočil)
-- **Stripe provizije:** 2,9% + €0,30 (samo pri transakcijah)
-
-**SKUPAJ:** €0-200/mesec za prvi mesec, nato €100-350/mesec ko se razširi
-
-### 🎯 KAKO PERPLEXITY REŠUJE GLAVNE IZZIVE:
-
-#### **1. Razumevanje povpraševanja**
+- **Vercel** – hosting za Next.js front/back.
+- **Firebase Hosting** – dodatne statične vsebine (slike, JS).
+- **GitHub** – verzioniranje in CI/CD.
 
 ---
 
